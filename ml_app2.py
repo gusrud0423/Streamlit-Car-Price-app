@@ -25,6 +25,8 @@ def run_ml_app() :
     gender =  st.radio('성별을 선택하세요', ['남자', '여자'])
     if gender == '남자' : 
         gender = 1
+    elif gender == '여자' :
+        gender = 0
 
     # 나이                             # 최소 몇~~ 부터 최대 몇 ~ 까지 범위지정
     age =  st.number_input('나이 입력', min_value=0, max_value= 100)
